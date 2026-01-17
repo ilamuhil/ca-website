@@ -1,45 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Ilamurugu and Associates - CA Website
+
+A clean, minimal, ICAI-safe website for a Chartered Accountancy practice built with Next.js App Router.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (LTS recommended)
+- pnpm
+
+### Install & run
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
+
+- **Home / About / Services / Contact** pages
+- **Markdown-driven services**:
+  - List: `/services`
+  - Detail: `/services/[slug]` rendered from `content/services/*.md`
+- **Tailwind CSS + shadcn-style components**
+- **SEO basics**: metadata, sitemap, robots
+- **Contact form** via Web3Forms (optional)
 
 ## Contact form (Web3Forms)
 
 This site can submit the contact form via Web3Forms using the official React hook.
 
-- Set an environment variable:
-  - `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY`
+- **Required env var**: `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY`
+- Reference: [Web3Forms React Plugin](https://docs.web3forms.com/how-to-guides/js-frameworks/react-js/react-plugin)
 
-See: [Web3Forms React Plugin](https://docs.web3forms.com/how-to-guides/js-frameworks/react-js/react-plugin)
+## Content editing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Services (Markdown)
 
-## Learn More
+- Add/edit markdown files in `content/services/`
+- Each file supports frontmatter:
+  - `title`
+  - `summary`
 
-To learn more about Next.js, take a look at the following resources:
+## Configuration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Update firm details in `lib/site.ts` (name, email, phone, address, site URL).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Scripts
 
-## Deploy on Vercel
+```bash
+pnpm dev
+pnpm build
+pnpm start
+pnpm lint
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Notes (professional conduct)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Website content is written to be factual and professional, avoids misleading claims, and includes disclaimers. Engagement scope and terms are agreed in writing.
