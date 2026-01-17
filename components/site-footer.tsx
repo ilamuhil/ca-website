@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Phone, ShieldCheck } from "lucide-react";
+import { Mail, MessageSquare, Phone, ShieldCheck } from "lucide-react";
 
 import { getAllServicesMeta } from "@/lib/content/services";
 import { siteConfig } from "@/lib/site";
@@ -62,19 +62,20 @@ export async function SiteFooter() {
           <div className="space-y-3">
             <p className="text-sm font-semibold">Contact</p>
             <ul className="space-y-2 text-sm text-zinc-300">
-              <li>
+              <li className="flex items-start gap-2">
+                <MessageSquare className="mt-0.5 h-5 w-5 shrink-0 text-zinc-200" aria-hidden="true" />
                 <Link className="hover:text-zinc-100 hover:underline hover:underline-offset-4" href="/contact">
-                  Contact form
+                  Get in touch
                 </Link>
               </li>
               <li className="flex items-start gap-2">
-                <Mail className="mt-0.5 h-4 w-4 text-zinc-400" aria-hidden="true" />
+                <Mail className="mt-0.5 h-5 w-5 shrink-0 text-zinc-200" aria-hidden="true" />
                 <a className="underline underline-offset-4" href={`mailto:${siteConfig.contactEmail}`}>
                   {siteConfig.contactEmail}
                 </a>
               </li>
               <li className="flex items-start gap-2">
-                <Phone className="mt-0.5 h-4 w-4 text-zinc-400" aria-hidden="true" />
+                <Phone className="mt-0.5 h-5 w-5 shrink-0 text-zinc-200" aria-hidden="true" />
                 <a className="underline underline-offset-4" href={`tel:${siteConfig.phone.replace(/\\s+/g, "")}`}>
                   {siteConfig.phone}
                 </a>

@@ -55,7 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="min-h-dvh bg-background font-sans text-foreground antialiased">
+      <body className="min-h-dvh bg-linear-to-br from-sky-100 via-white to-emerald-100 font-sans text-foreground antialiased">
         <SiteHeader />
         <main className="mx-auto w-full max-w-5xl px-4 py-8 text-[15px] leading-6 sm:px-6 sm:py-9 min-h-[calc(100dvh-200px)]">
           {children}

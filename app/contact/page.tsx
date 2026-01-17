@@ -94,7 +94,7 @@ export default function ContactPage() {
           <form className="space-y-4" onSubmit={handleSubmit(submit)}>
             <input type="checkbox" className="hidden" style={{ display: "none" }} {...register("botcheck")} />
             <div className="space-y-2 pt-4">
-              <Label htmlFor="name">Name</Label>
+              <Label htmlFor="name">Name*</Label>
               <div className="relative">
                 <User className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" aria-hidden="true" />
                 <Input
@@ -107,7 +107,7 @@ export default function ContactPage() {
               {errors.name ? <p className="text-xs text-red-600">{errors.name.message}</p> : null}
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email">Email*</Label>
               <div className="relative">
                 <AtSign className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" aria-hidden="true" />
                 <Input
@@ -124,7 +124,7 @@ export default function ContactPage() {
               {errors.email ? <p className="text-xs text-red-600">{errors.email.message}</p> : null}
             </div>
             <div className="space-y-2">
-              <Label htmlFor="message">Message</Label>
+              <Label htmlFor="message">Message*</Label>
               <div className="relative">
                 <MessageSquare className="pointer-events-none absolute left-3 top-3 h-4 w-4 text-muted-foreground" aria-hidden="true" />
                 <Textarea
