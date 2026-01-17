@@ -91,7 +91,7 @@ export async function SiteFooter() {
 
       <div className="border-t border-zinc-800 bg-zinc-900">
         <div className="mx-auto w-full max-w-5xl px-4 py-3 text-[11px] leading-relaxed text-zinc-300 sm:px-6">
-          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-col gap-2 sm:items-center">
             <p>© {year} {siteConfig.name}. All rights reserved.</p>
             <p>
               Disclaimer: Information on this website is general in nature and does not constitute professional advice.
@@ -101,7 +101,7 @@ export async function SiteFooter() {
         </div>
       </div>
 
-      <div className="border-t border-zinc-800 bg-zinc-950 text-zinc-300">
+      <div className="border-t border-zinc-800 bg-sky-900/50 text-zinc-300">
         <div className="mx-auto w-full max-w-5xl px-4 py-2 text-center text-[12px] sm:px-6">
           <span>Made with </span>
           <span aria-hidden="true">❤️</span>
