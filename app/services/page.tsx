@@ -58,7 +58,7 @@ export default async function ServicesPage() {
           (() => {
             const Icon = iconBySlug[s.slug] ?? Briefcase;
             return (
-          <Link key={s.slug} href={`/services/${s.slug}`} className="group">
+          <Link key={s.slug} href={`/services/${s.slug}`} className="group hover:scale-102 hover:shadow-sm hover:ring-1 hover:ring-slate-300 rounded-lg transition-transform duration-300">
             <Card className="relative h-[176px] overflow-hidden transition-colors group-hover:bg-muted">
               <div className="absolute inset-0">
                 <Image src="/service-card-bg.svg" alt="" fill className="object-cover opacity-80" aria-hidden="true" />
@@ -75,7 +75,7 @@ export default async function ServicesPage() {
                       <Icon className="h-4 w-4 text-foreground" aria-hidden={true} />
                     </span>
                     <div>
-                      <CardTitle className="text-base leading-5">{s.title}</CardTitle>
+                      <CardTitle className="text-lg mt-0.5 leading-5">{s.title}</CardTitle>
                       {s.summary ? (
                         <CardDescription className="mt-2 text-xs leading-5 line-clamp-2">
                           {s.summary}
