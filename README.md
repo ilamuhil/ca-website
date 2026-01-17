@@ -18,6 +18,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Contact form (Web3Forms)
+
+This site can submit the contact form via Web3Forms using the official React hook.
+
+- Set an environment variable:
+  - `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY`
+
+See: [Web3Forms React Plugin](https://docs.web3forms.com/how-to-guides/js-frameworks/react-js/react-plugin)
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
