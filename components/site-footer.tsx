@@ -100,6 +100,23 @@ export async function SiteFooter() {
           </div>
         </div>
       </div>
+
+      <div className="border-t border-zinc-800 bg-zinc-950 text-zinc-300">
+        <div className="mx-auto w-full max-w-5xl px-4 py-2 text-center text-[12px] sm:px-6">
+          <span>Made with </span>
+          <span aria-hidden="true">❤️</span>
+          <span className="sr-only">love</span>
+          <span> by </span>
+          <a
+            className="font-medium text-zinc-100 underline underline-offset-4 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-100/80 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
+            href="https://ilamuhil.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ilamuhil
+          </a>
+        </div>
+      </div>
     </footer>
   );
 }
