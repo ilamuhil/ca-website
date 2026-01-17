@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Ilamurugu and Associates",
+  name: "Ilamurugu Associates",
   description:
     "Practising Chartered Accountants offering professional services in auditing, accounting systems, income tax practice, company law matters, indirect tax matters, and formation of companies.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
