@@ -25,8 +25,9 @@ export async function SiteFooter() {
               Practising Chartered Accountants providing professional services in audit, accounting,
               tax and compliance.
             </p>
-            <p className="flex items-start gap-2 text-xs text-zinc-400">
+            <p className="flex flex-col items-start gap-2 text-xs text-zinc-400">
               <span className="italic">{siteConfig.address.full}</span>
+              <span className="italic">GSTIN: {siteConfig.address.gstin}</span>
             </p>
           </div>
 

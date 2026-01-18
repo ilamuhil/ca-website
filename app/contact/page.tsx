@@ -73,7 +73,8 @@ export default function ContactPage() {
               <MapPin className="h-5 w-5" aria-hidden="true" />
             </span>
             <span>
-              <span className="text-foreground">Address:</span> {siteConfig.address.full}
+              <span className="text-foreground">Address:</span> {siteConfig.address.full} <br />
+              <span className="text-foreground">GSTIN:</span> {siteConfig.address.gstin}
             </span>
           </p>
         </div>
