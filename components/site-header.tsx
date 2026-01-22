@@ -24,15 +24,14 @@ export function SiteHeader() {
       <div className="mx-auto flex w-full max-w-5xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/logo.png"
+            src="/logo-v2.png"
             alt={`${siteConfig.name} logo`}
-            width={50}
-            height={50}
+            width={100}
+            height={100}
             priority
           />
-          <span className="text-sm font-semibold tracking-tight">{siteConfig.name}</span>
+          <span className="text-xl font-semibold tracking-tight">{siteConfig.name}</span>
         </Link>
-
         <nav className="hidden items-center gap-1 sm:flex">
           {nav.map((item) => (
             <Button key={item.href} asChild variant="ghost" size="sm">
